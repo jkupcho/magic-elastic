@@ -7,7 +7,7 @@ import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
 
-@Document(indexName="mtg.cards", type="string", indexStoreType="shard")
+@Document(indexName="mtg.cards", type="string")
 public class Card {
 	
 	@Id
