@@ -13,11 +13,7 @@ import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilde
 import org.springframework.data.elasticsearch.core.query.SearchQuery;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.MultiValueMap;
-<<<<<<< HEAD
-import org.springframework.validation.BindingResult;
-=======
 import org.springframework.web.bind.annotation.PathVariable;
->>>>>>> FETCH_HEAD
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
