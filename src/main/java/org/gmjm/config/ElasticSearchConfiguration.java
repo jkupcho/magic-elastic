@@ -12,7 +12,7 @@ import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
 import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
 
 @Configuration
-@EnableAutoConfiguration(exclude={ ElasticsearchAutoConfiguration.class })
+@EnableAutoConfiguration(exclude={ElasticsearchAutoConfiguration.class})
 @EnableElasticsearchRepositories(basePackages="org.gmjm.repo.es")
 public class ElasticSearchConfiguration {
 	

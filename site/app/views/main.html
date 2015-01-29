@@ -4,6 +4,12 @@
       <input type="text" placeholder="Search" class="form-control" ng-model="search">
     </div>
   </form>
-  <div class="row">
+  <div class="row marketing">
+    <ul class="card-container">
+      <li class="card-list" ng-repeat="card in cards">
+        <card-list-item card="card" />
+      </li>
+    </ul>
+    <pagination ng-show="numPages > 1" ng-model="currentPage" num-pages="numPages" total-items="totalItems"></pagination>
   </div>
 </div>

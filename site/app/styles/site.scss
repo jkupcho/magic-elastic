@@ -1,0 +1,26 @@
+.card-container { padding: 0; }
+.card-list {
+  list-style-type: none;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #dedede;
+}
+a.card-list-item {
+  display: block;
+  background-color: #f7f7f7;
+  .row {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-left: -25px;
+    margin-right: 10px;
+  }
+  img {
+    width: 85px;
+    margin: 0 auto;
+    display: block;
+  }
+  &:hover {
+    
+  }
+}
