@@ -37,7 +37,7 @@ public class ApiController {
 		return cards;
 	}
 	
-	@RequestMapping(value="search/{id}", produces="application/json")
+	@RequestMapping(value="search/id/{id}", produces="application/json")
 	public @ResponseBody Card queryForCards(@PathVariable String id) {
 		return cardRepository.findOne(id);
 	}
