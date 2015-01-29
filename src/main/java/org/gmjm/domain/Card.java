@@ -76,7 +76,6 @@ public class Card {
 	@Field(type=FieldType.String)
 	private String toughness;
 	
-	
 	@Field(type=FieldType.String)
 	private String manaCost;
 	
@@ -86,17 +85,9 @@ public class Card {
 	@Field(type=FieldType.String)
 	private List<String> colors;
 	
-	
-	
 	@Field(type=FieldType.String)
 	private String power;
 
-	
-
-	
-
-	
-	
 	public List<String> getTypes() {
 		return types;
 	}
