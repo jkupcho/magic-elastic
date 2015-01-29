@@ -40,6 +40,11 @@ public class CardRepositoryIntegrationTest {
 		Page<Card> cards = cardRepository.findByColorsIn(Arrays.asList("White", "Red"),pr);
 		assertNotNull(cards);
 		assertEquals(10,cards.getSize());
+		
+		for(Card c : cards.getContent())
+		{
+			System.out.println(c);
+		}
 	}
 
 }
