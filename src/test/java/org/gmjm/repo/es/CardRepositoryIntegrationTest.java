@@ -1,9 +1,9 @@
 package org.gmjm.repo.es;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.*;
 
 import java.util.Arrays;
+import java.util.List;
 
 import org.gmjm.config.ElasticSearchConfiguration;
 import org.gmjm.domain.Card;
@@ -29,8 +29,8 @@ public class CardRepositoryIntegrationTest {
 	
 	@Test
 	public void testFindAll() {
-		Card card = cardRepository.findOne("54b6c4e46349203cd1d9b0ae");
-		assertNotNull(card);
+		List<Card> card = cardRepository.findAll();
+		assertTrue(card.size() > 0);
 	}
 	
 	@Test
@@ -39,21 +39,6 @@ public class CardRepositoryIntegrationTest {
 		PageRequest pr = new PageRequest(0, 10);
 		
 		Page<Card> cards = cardRepository.findByColorsIn(Arrays.asList("White", "Red"),pr);
-		assertNotNull(cards);
-		assertEquals(10,cards.getSize());
-		
-		for(Card c : cards.getContent())
-		{
-			System.out.println(c);
-		}
-	}
-
-	@Test
-	public void testFindByName() {
-		
-		PageRequest pr = new PageRequest(0, 10);
-		
-		Page<Card> cards = cardRepository.findByName("wrath", pr);
 		assertNotNull(cards);
 		assertEquals(10,cards.getSize());
 		
