@@ -48,4 +48,19 @@ public class CardRepositoryIntegrationTest {
 		}
 	}
 
+	@Test
+	public void testFindByName() {
+		
+		PageRequest pr = new PageRequest(0, 10);
+		
+		Page<Card> cards = cardRepository.findByName("wrath", pr);
+		assertNotNull(cards);
+		assertEquals(10,cards.getSize());
+		
+		for(Card c : cards.getContent())
+		{
+			System.out.println(c);
+		}
+	}
+	
 }

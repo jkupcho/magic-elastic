@@ -23,10 +23,10 @@ angular.module('magicSiteApp')
     $scope.queryCards = function () {
       $http.get('/api/search', {
         params: {
-          name: $scope.name
+          name: $scope.search
         }
       }).success(function (data) {
-
+        console.log(data);
       }).error(function (error) {
         console.log('error!');
       });
