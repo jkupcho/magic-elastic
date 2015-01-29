@@ -64,8 +64,8 @@ public class Card {
 	@Field(type=FieldType.String)
 	private String loyalty;
 	
-	@Field(type=FieldType.Integer)
-	private Integer number;
+	@Field(type=FieldType.String)
+	private String number;
 	
 	@Field(type=FieldType.String)
 	private String artist;
@@ -74,7 +74,7 @@ public class Card {
 	private String watermark;
 	
 	@Field(type=FieldType.String)
-	private Integer toughness;
+	private String toughness;
 	
 	
 	@Field(type=FieldType.String)
@@ -88,8 +88,8 @@ public class Card {
 	
 	
 	
-	@Field(type=FieldType.Integer)
-	private Integer power;
+	@Field(type=FieldType.String)
+	private String power;
 
 	
 
@@ -105,11 +105,11 @@ public class Card {
 		this.types = types;
 	}
 
-	public Integer getPower() {
+	public String getPower() {
 		return power;
 	}
 
-	public void setPower(Integer power) {
+	public void setPower(String power) {
 		this.power = power;
 	}
 
@@ -265,11 +265,11 @@ public class Card {
 		this.loyalty = loyalty;
 	}
 
-	public Integer getNumber() {
+	public String getNumber() {
 		return number;
 	}
 
-	public void setNumber(Integer number) {
+	public void setNumber(String number) {
 		this.number = number;
 	}
 
@@ -289,11 +289,11 @@ public class Card {
 		this.watermark = watermark;
 	}
 
-	public Integer getToughness() {
+	public String getToughness() {
 		return toughness;
 	}
 
-	public void setToughness(Integer toughness) {
+	public void setToughness(String toughness) {
 		this.toughness = toughness;
 	}
 
