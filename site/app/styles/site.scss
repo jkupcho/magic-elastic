@@ -1,3 +1,5 @@
+@import "compass/css3"; 
+
 .card-container { padding: 0; }
 .card-list {
   list-style-type: none;
@@ -5,17 +7,30 @@
   padding-top: 15px;
   padding-bottom: 1px;
   border-bottom: 1px solid #dedede;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 a.card-list-item {
+  position: relative;
   display: block;
   background-color: #f7f7f7;
+  color: #323232;
+  .set-image-wrapper {
+    overflow: hidden;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    .set-image {
+      @include opacity(0.25);
+    }
+  }
   .row {
     padding-bottom: 5px;
     padding-top: 5px;
-    margin-left: -25px;
-    margin-right: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    height: 125px;
   }
-  img {
+  img.card {
     width: 85px;
     margin: 0 auto;
     display: block;

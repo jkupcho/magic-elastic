@@ -13,6 +13,19 @@ angular.module('magicSiteApp')
       restrict: 'E',
       scope: {
         card: '='
+      },
+      link: function (scope, element, attrs) {
+        scope.rarity = function () {
+          var rarity = scope.card.rarity[0].toLowerCase();
+          if (rarity !== 'c' ||
+              rarity !== 'u' ||
+              rarity !== 'r' ||
+              rarity !== 'm' ||
+              rarity !== 's') {
+            rarity = 'c';
+          }
+          return rarity;
+        }
       }
     };
   });
